@@ -1,7 +1,7 @@
-@use "../../libs/normalize.css/normalize.scss";
+@use "../../libs/normalize.css/normalize.scss" as *;
 
 
-@import "common/typography";
+@use "common/typography" as *;
 
 
 

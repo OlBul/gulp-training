@@ -2,7 +2,22 @@
 @use "../../mixins" as *;
 
 .header-contant {
+  position: relative;
+  z-index: 1;
+
+
   &__container {
     @extend %container;
+  }
+
+  &__title {
+    margin: 0 0 66px 0;
+    text-align: center;
+  }
+
+  &__action {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
   }
 }

@@ -2,7 +2,9 @@
 @use "../mixins" as *;
 
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -10,6 +12,13 @@ html {
   color: $color-gray;
   font-family: $font-main;
   font-size: $font-size;
+}
+
+h1 {
+  font-size: 3.75rem;
+  letter-spacing: 0.1em;
+  font-weight: 300;
+  font-family: $font-header;
 }
 
 a {
