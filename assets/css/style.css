@@ -507,3 +507,12 @@ a {
           justify-content: center;
   gap: 20px;
 }
+
+.skills__container {
+  display: grid;
+  gap: 10px;
+}
+.skill-item {
+  background-color: red;
+  min-height: 33vh;
+}

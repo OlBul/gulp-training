@@ -1,0 +1,12 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+.skills {
+  &__container {
+    display: grid;
+    gap: $gap-sm;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  &__actions {}
+}
