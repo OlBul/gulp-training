@@ -8,6 +8,11 @@
   right: 0;
   z-index: 2;
 
+  @include md {
+    background-color: rgba($color-light, 0.25);
+    @include box-shadow;
+  }
+
   &__container {
     display: grid;
     grid-template-columns: auto 1fr;
