@@ -9,26 +9,27 @@
 }
 
 html {
+  overflow-y: scroll;
+
   color: $color-gray;
+
   font-family: $font-main;
   font-size: $font-size;
-  overflow-y: scroll;
 }
 
 h1 {
   letter-spacing: 0.08em;
-  font-weight: 300;
+
   font-family: $font-header;
+  font-weight: 300;
   line-height: 1.2;
 
   @include lg-min {
     font-size: 3.75rem;
   }
-
   @include lg-md {
     font-size: 2.5rem;
   }
-
   @include md {
     font-size: 1.875rem;
   }
@@ -36,5 +37,6 @@ h1 {
 
 a {
   text-decoration: none;
+
   color: $color-light;
 }

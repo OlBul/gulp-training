@@ -3,22 +3,23 @@
 
 .header-menu {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
   z-index: 2;
+  top: 0;
+  right: 0;
+  left: 0;
 
   @include md {
     background-color: rgba($color-light, 0.25);
+
     @include box-shadow;
   }
 
   &__container {
     display: grid;
-    grid-template-columns: auto 1fr;
-    gap: $gap;
     align-items: center;
 
     @extend %container;
+    gap: $gap;
+    grid-template-columns: auto 1fr;
   }
 }
