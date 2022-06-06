@@ -6,11 +6,9 @@
 
   &__btn {
     position: relative;
-
     width: 30px;
     height: 22.5px;
     margin: $gap 0 20px auto;
-
     cursor: pointer;
     transition: 0.5s ease-in-out;
     transform: rotate(0deg);
@@ -21,27 +19,21 @@
 
     &-row {
       position: absolute;
-
       display: block;
-
       width: 50%;
       height: 3px;
-
       transition: 0.25s ease-in-out;
       transform: rotate(0deg);
-
       opacity: 1;
       background: $color-light;
 
       &:nth-child(even) {
         left: 50%;
-
         border-radius: 0 3px 3px 0;
       }
 
       &:nth-child(odd) {
         left: 0;
-
         border-radius: 3px 0 0 3px;
       }
 
@@ -62,6 +54,7 @@
     }
 
     &--active span {
+
       &:nth-child(1),
       &:nth-child(6) {
         transform: rotate(45deg);
@@ -84,13 +77,11 @@
 
       &:nth-child(3) {
         left: -50%;
-
         opacity: 0;
       }
 
       &:nth-child(4) {
         left: 100%;
-
         opacity: 0;
       }
 
@@ -110,20 +101,17 @@
     @include md-min {
       display: flex;
       justify-content: flex-end;
-
       gap: $gap;
       grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
       @include unlist (0 (-$gap-sm) 0 0);
     }
+
     @include md {
       position: absolute;
       top: 100%;
       right: $gap;
-
       display: none;
-
       text-align: right;
-
       background-color: rgba($color-gray-dark, 0.9);
 
       @include unlist;
@@ -139,14 +127,13 @@
 
   &__link {
     display: block;
-
     transition: color 0.5s;
-
     font-size: 1.125rem;
 
     @include md-min {
       padding: $gap $gap-sm;
     }
+
     @include md {
       padding: $gap-sm $gap;
     }
@@ -157,6 +144,3 @@
     }
   }
 }
-
-
-

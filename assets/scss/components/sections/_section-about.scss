@@ -10,7 +10,7 @@
     padding: 100px 0;
   }
 
-  @include lg-sm {
+  @include lg-md {
     padding: 80px 0;
   }
 }
@@ -18,8 +18,18 @@
 .about-container {
   @extend %container;
   display: grid;
-  grid-template-columns: 2fr 271px;
-  gap: 100px;
+  grid-template-columns: 2fr 236px;
+  gap: $gap;
+
+  @include lg-min {
+    grid-template-columns: 2fr 271px;
+    gap: 100px;
+  }
+
+  @include lg-md {
+    grid-template-columns: 2fr 271px;
+    gap: 40px;
+  }
 
   @include sm {
     gap: 20px;
@@ -29,39 +39,10 @@
 
 .about-contant {}
 
-.about-contant__title {
-  font-size: 1.5rem;
-  letter-spacing: 0.125rem;
-  line-height: 2rem;
-  font-weight: 700;
-  color: $color-primary;
-  font-family: "Roboto Slab";
-  margin-bottom: 2.25rem;
 
-  @include lg-min {
-    font-size: 2.5rem;
-    letter-spacing: 0.25rem;
-    line-height: 3rem;
-    margin-bottom: 3rem;
-  }
-
-  @include lg-sm {
-    font-size: 2rem;
-    letter-spacing: 0.188rem;
-    line-height: 2.5rem;
-    margin-bottom: 2.625rem;
-  }
-
-  @include sm {
-    text-align: center;
-
-  }
-
-}
 
 .about-contant__text {
-  letter-spacing: 0.0625rem;
-  line-height: 1.5rem;
+  letter-spacing: 0.055rem;
   color: $color-gray;
   font-weight: 400;
 
@@ -71,7 +52,7 @@
 
   p:first-of-type {
     position: relative;
-    margin: -5px 0 0 0;
+    margin-top: -5px;
 
     &:after {
       content: "";
@@ -97,6 +78,10 @@
         display: none;
       }
     }
+  }
+
+  p:last-of-type {
+    margin: 0;
   }
 }
 
