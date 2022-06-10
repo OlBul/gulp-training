@@ -18,21 +18,25 @@
 .about-container {
   @extend %container;
   display: grid;
-  grid-template-columns: 2fr 236px;
-  gap: $gap;
+
 
   @include lg-min {
-    grid-template-columns: 2fr 271px;
+    grid-template-columns: 1fr 271px;
     gap: 100px;
   }
 
   @include lg-md {
-    grid-template-columns: 2fr 271px;
+    grid-template-columns: 1fr 271px;
     gap: 40px;
   }
 
+  @include md-sm {
+    grid-template-columns: 1fr 236px;
+    gap: $gap;
+  }
+
   @include sm {
-    gap: 20px;
+    gap: $gap;
     grid-template-columns: 1fr;
   }
 }

@@ -492,13 +492,18 @@ p {
 }
 
 .header-navbar {
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: end;
   letter-spacing: 0.1em;
 }
 .header-navbar__btn {
   position: relative;
   width: 30px;
-  height: 22.5px;
-  margin: 20px 0 20px auto;
+  height: 23px;
+  margin: 20px 0;
   cursor: pointer;
   -webkit-transition: 0.5s ease-in-out;
   -o-transition: 0.5s ease-in-out;
@@ -715,8 +720,6 @@ p {
 
 .about-container {
   display: grid;
-  grid-template-columns: 2fr 236px;
-  gap: 20px;
 }
 
 .about-contant__text {
@@ -776,11 +779,12 @@ p {
 .form-item__input {
   display: block;
   font-size: 1.125rem;
+  letter-spacing: 0.15em;
   height: 60px;
   width: 100%;
-  padding: 1px 30px;
+  padding-left: 30px;
+  padding-right: 30px;
   background-color: rgba(255, 255, 255, 0.1);
-  letter-spacing: 0.15em;
   color: #ffffff;
   border: 2px solid rgba(255, 255, 255, 0);
   border-bottom-color: rgba(255, 255, 255, 0.25);
@@ -949,6 +953,10 @@ p {
   -o-transition: color 0.5s;
   transition: color 0.5s;
 }
+.footer__social a:hover,
+.footer__social a:focus {
+  color: #d66926;
+}
 .footer__social .fab {
   font-size: 36px;
 }
@@ -975,6 +983,9 @@ p {
   }
   .skills__actions {
     margin-bottom: 30px;
+  }
+  .skills__actions .btn--primary {
+    min-width: 350px;
   }
 }
 @media (min-height: 690px) {
@@ -1021,8 +1032,6 @@ p {
   }
   .subtitle {
     font-size: 2.5rem;
-    letter-spacing: 0.25rem;
-    line-height: 3rem;
     margin-bottom: 3rem;
   }
   .header-contant__title {
@@ -1036,7 +1045,7 @@ p {
     padding: 100px 0;
   }
   .about-container {
-    grid-template-columns: 2fr 271px;
+    grid-template-columns: 1fr 271px;
     gap: 100px;
   }
   .about-contant__text {
@@ -1063,8 +1072,6 @@ p {
   }
   .subtitle {
     font-size: 2rem;
-    letter-spacing: 0.188rem;
-    line-height: 2.5rem;
     margin-bottom: 2.625rem;
   }
   .header-contant__title {
@@ -1078,7 +1085,7 @@ p {
     padding: 80px 0;
   }
   .about-container {
-    grid-template-columns: 2fr 271px;
+    grid-template-columns: 1fr 271px;
     gap: 40px;
   }
   .about-contant__text p:first-of-type:after {
@@ -1138,6 +1145,10 @@ p {
   .skills__container {
     grid-template-areas: "a1 a2" "a3 a2" "a4 a4" "a5 a6" "a5 a7" "a8 a9";
     grid-template-columns: repeat(2, 1fr);
+  }
+  .about-container {
+    grid-template-columns: 1fr 236px;
+    gap: 20px;
   }
   .about-contant__text p:first-of-type:after {
     right: -10px;

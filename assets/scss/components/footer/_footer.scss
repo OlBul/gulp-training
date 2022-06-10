@@ -36,6 +36,11 @@
     transition: color 0.5s;
   }
 
+  a:hover,
+  a:focus {
+    color: #d66926;
+  }
+
   .fab {
     font-size: 36px;
   }

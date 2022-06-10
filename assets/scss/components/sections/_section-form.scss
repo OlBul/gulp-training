@@ -39,16 +39,16 @@
 
 }
 
-
 .form-item {
   &__input {
     display: block;
     font-size: 1.125rem;
+    letter-spacing: 0.15em;
     height: 60px;
     width: 100%;
-    padding: 1px $gap-lg;
+    padding-left: $gap-lg;
+    padding-right: $gap-lg;
     background-color: rgba($color-light, $alpha: 0.1);
-    letter-spacing: 0.15em;
     color: $color-light;
     border: 2px solid rgba(255, 255, 255, 0);
     border-bottom-color: rgba(255, 255, 255, 0.25);
@@ -65,8 +65,6 @@
         color: rgba($color-light, $alpha: 50%);
       }
     }
-
-
   }
 
   @include md-sm {

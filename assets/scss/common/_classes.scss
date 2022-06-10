@@ -65,15 +65,11 @@
 
   @include lg-min {
     font-size: 2.5rem;
-    letter-spacing: 0.25rem;
-    line-height: 3rem;
     margin-bottom: 3rem;
   }
 
   @include lg-md {
     font-size: 2rem;
-    letter-spacing: 0.188rem;
-    line-height: 2.5rem;
     margin-bottom: 2.625rem;
   }
 
