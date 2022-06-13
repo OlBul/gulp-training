@@ -15,7 +15,7 @@
   }
 }
 
-.about-container {
+.about__container {
   @extend %container;
   display: grid;
 
@@ -41,11 +41,11 @@
   }
 }
 
-.about-contant {}
+.about-content {}
 
 
 
-.about-contant__text {
+.about-content__text {
   letter-spacing: 0.055rem;
   color: $color-gray;
   font-weight: 400;
