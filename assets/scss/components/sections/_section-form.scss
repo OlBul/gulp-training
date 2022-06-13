@@ -56,7 +56,7 @@
     transition: background-color 0.5s, border-color 0.5s;
 
     &::placeholder {
-      color: #637588;
+      color: $color-gray;
     }
 
     &:hover,
